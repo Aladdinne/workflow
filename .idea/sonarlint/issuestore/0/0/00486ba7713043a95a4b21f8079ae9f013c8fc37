@@ -1,0 +1,15 @@
+
+g	java:S112W"FDefine and throw a dedicated exception instead of using a generic one.(ì™Ÿ™şÿÿÿÿ8Õ†ÃÓÙ1
+b	java:S112o"FDefine and throw a dedicated exception instead of using a generic one.(ÃÛÑã8Õ†ÃÓÙ1
+c	java:S112‹"FDefine and throw a dedicated exception instead of using a generic one.(¼’£è8Ö†ÃÓÙ1
+b	java:S112²"FDefine and throw a dedicated exception instead of using a generic one.(Æ¥ù}8Ö†ÃÓÙ1
+i
+java:S1192j"GDefine a constant instead of duplicating this literal "ACTIVE" 3 times.(“ñÏúıÿÿÿÿ8Ø†ÃÓÙ1
+_
+java:S68131"BRemove this field injection and use constructor injection instead.(êæÄŞ8‘‡ÃÓÙ1
+_
+java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8‘‡ÃÓÙ1
+J
+java:S1602»",Remove useless curly braces around statement(’×ä´8¾‡ÃÓÙ1
+]
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8Û‡ÃÓÙ1

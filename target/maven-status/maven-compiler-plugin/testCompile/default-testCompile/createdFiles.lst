@@ -1,0 +1,3 @@
+com\example\workflow\repository\WorkflowRepositoryTest.class
+com\example\workflow\repository\FormRepositoryTest.class
+com\example\workflow\service\FormsServiceTest.class
