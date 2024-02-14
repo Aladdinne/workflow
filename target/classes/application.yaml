@@ -2,7 +2,7 @@ spring:
   application:
     name: backend
   datasource:
-    url: jdbc:mysql://localhost:3306/workflow?useUnicode=true&createDatabaseIfNotExist=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/eeee
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 
@@ -16,7 +16,7 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: rm.nader.228@gmail.com
+    username: rm.nader.28@gmail.com
     password: maefjbbhwvnexfjd
     properties:
       mail:

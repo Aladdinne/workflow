@@ -56,12 +56,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
             .authorizeRequests()
                 .antMatchers("/api/auth/**").permitAll()
-                .antMatchers("/swagger-ui/**").permitAll()
                 .antMatchers("/api/test/**").permitAll()
                 .antMatchers("/form/**", "/process/**", "/task/**", "/workflow/**").permitAll()
                 .antMatchers("/camunda/**", "/backend/camunda/**").permitAll() // Ajoutez votre URL spécifique ici
-                .anyRequest().authenticated().and()
-                .httpBasic();
+                .anyRequest().authenticated();
 
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
     }
