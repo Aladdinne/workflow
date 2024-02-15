@@ -47,9 +47,9 @@ public class Application {
             "APIs for managing workflows",
             "1.0",
             "use it under Xtensus LICENSE",
-            new springfox.documentation.service.Contact("Nader Hmed" , "https://github.com/","nader.hamad@esprit.tn"),
-            "Xtensus API LICENSE",
-            "https://www.xtensus.com",
+            new springfox.documentation.service.Contact("Alaeddine Hammouda" , "https://github.com/Aladdinne","alaeddine.hammouda213@gmail.com"),
+            "Alaeddine",
+            "https://www.linkedin.com/in/alaeddine-hammouda-93927415b/",
             Collections.emptyList());
   }
 
