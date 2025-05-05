@@ -34,7 +34,7 @@ camunda:
   bpm:
     enabled: true
     admin-user:
-      id: xtensus
+      id: xtenflux
       password: YOUR_CAMUNDA_ADMIN_PASSWORD
     database:
       schema-update: true
