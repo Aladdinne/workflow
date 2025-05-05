@@ -2,39 +2,40 @@ spring:
   application:
     name: backend
   datasource:
-    url: jdbc:mysql://localhost:3305/workflow?useUnicode=true&createDatabaseIfNotExist=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: root
+    url: jdbc:mysql://localhost:3306/workflow?useUnicode=true&createDatabaseIfNotExist=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: YOUR_DB_USERNAME
+    password: YOUR_DB_PASSWORD
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     generate-ddl: true
     hibernate:
-      ddl-auto: create # Or "create" if you want to recreate the schema on each startup
+      ddl-auto: update
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ***************
-    password: *****************
+    username: YOUR_MAIL_USERNAME
+    password: YOUR_MAIL_PASSWORD
     properties:
       mail:
         smtp:
           auth: true
           starttls:
             enable: true
+
 server:
   servlet:
     context-path: /backend
   port: 8187
-    
+
 camunda:
   bpm:
     enabled: true
     admin-user:
-      id: *******
-      password: *******
+      id: xtensus
+      password: YOUR_CAMUNDA_ADMIN_PASSWORD
     database:
       schema-update: true
     filter:
@@ -45,12 +46,12 @@ camunda:
     auto-deployment-enabled: true
     default-number-of-retries: 3
     job-execution:
-      enabled: true 
+      enabled: true
     server:
-       port: 8188
+      port: 8188
 
 xtenflux:
   app:
-    jwtSecret: flowviooSecretKey
+    jwtSecret: YOUR_JWT_SECRET
     jwtExpirationMs: 86400000
     jwtRefreshExpirationMs: 86400000
